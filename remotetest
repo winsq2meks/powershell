@@ -1,0 +1,4 @@
+If (Test-Connection -ComputerName $RemoteComputers -Quiet)
+{
+     Invoke-Command -ComputerName $RemoteComputers -ScriptBlock {Get-ChildItem “C:\Program Files”}
+}
